@@ -8,4 +8,3 @@ else
     echo "Restarting"
     ssh -i main_key.pem -p 443 ubuntu@IPADDRESS "cd $(pwd); sudo bash /home/ubuntu/spigot/console.sh restart"
 fi
-~      
