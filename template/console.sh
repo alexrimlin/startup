@@ -22,7 +22,7 @@ then
     echo $(tail -f -n 1 screen.log | grep -m 1 "DIM1")
     echo "Starting spigot..."
     screen -S spigot -X stuff "sh serve.sh\n"
-    echo $(tail -f -n 1 screen.log | grep -m 1 "No new version available")
+    echo $(tail -f -n 1 screen.log | grep -m 1 ":Done")
 else
     screen -r spigot
 fi
